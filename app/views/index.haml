@@ -1,0 +1,8 @@
+%h1
+  Gemfile inspector
+
+%form{id: :upload, method: :post, action: '/upload', enctype: 'multipart/form-data'}
+  %p
+    Upload your gemfile and we will check the licenses
+  %input{id: :gemfile_upload, name: :gemfile_upload, type: :file}
+  %input{type: :submit}

@@ -1,11 +1,13 @@
-require_relative "../models/gems"
+require_relative "../models/project_gem"
 
 class GemRepository
-  def find(id)
-    Gems.find(id)
-  end
+  def self.get_license_by_name(gem_name)
+    g = ProjectGem.where(name: gem_name).first
 
-  def all
-    Gems.all
+    if g and !g.license.nil?
+      g.license.name
+    else
+      "Unknown"
+    end 
   end
 end
