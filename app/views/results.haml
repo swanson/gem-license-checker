@@ -1,5 +1,31 @@
-%ul
-  - @results.each do |result|
-    %li
-      = result.name
-      = result.license
+%header
+  %h1
+  .row-fluid
+    %a{href: "/"}
+      Check another Gemfile
+
+    .pull-right
+      %a{href: "/"}
+        Report incorrect data
+
+#results
+  #report-top
+  %ul
+    %li 
+      %span{class: :gem_header}
+        Your Dependencies
+      .pull-right
+        %span{class: :license_header}
+          License
+    - @results.each do |result|
+      %li
+        gem
+        %span{class: :gem}
+          = "\"#{result.name}\""
+        .pull-right
+          %span{class: :license}
+            = result.license
+  #report-bottom
+
+%p{class: :help}
+  (Refresh to update "Checking..." gems)

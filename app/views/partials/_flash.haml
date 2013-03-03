@@ -1,4 +1,4 @@
 - [:sucess, :error, :warning, :notice].each do |key|
   -if flash[key]
-    %div{id: "#{key.to_s}", class: :notification}
+    %div{class: "alert alert-#{key.to_s}"}
       = flash[key]

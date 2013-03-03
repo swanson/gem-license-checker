@@ -1,8 +1,26 @@
-%h1
-  Gemfile inspector
+#header
+  %img{src: "/img/logo.png", alt: "Icons courtesy of the Noun Project"}
+  
+  %h1 Gem License Checker
 
-%form{id: :upload, method: :post, action: '/upload', enctype: 'multipart/form-data'}
-  %p
-    Upload your gemfile and we will check the licenses
-  %input{id: :gemfile_upload, name: :gemfile_upload, type: :file}
-  %input{type: :submit}
+#index
+  = render partial: :flash
+  
+  %form{id: :upload, method: :post, action: '/upload', enctype: 'multipart/form-data'}
+    .row-fluid
+      .span6
+        .number
+          1
+        %p
+          Upload your Gemfile
+        .clear-fix
+        .action
+          %input{id: :gemfile_upload, name: :gemfile_upload, type: :file}
+      .span6
+        .number
+          2
+        %p
+          Generate a License Report
+        .clear-fix
+        .action
+          %input{type: :submit, class: "btn btn-green", value: "Generate Report"}

@@ -1,9 +1,32 @@
 !!!
 %html
   %head
+    %link(rel="stylesheet" href="/css/bootstrap.min.css")
+    %link(rel="stylesheet" href="/css/styles.css")
 
+    %script{:type => "text/javascript",
+            :src  => "//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:type => "text/javascript",
+            :src  => "/js/bootstrap.file-input.js"}
   %body
+    #wrap
+      .container
+        = yield
+      #push
 
-    = render partial: :flash
-    
-    = yield
+    #footer
+      .container
+        .row-fluid
+          .span12
+            %p.pull-left
+              Need
+              %a{href: "http://www.sep.com"}
+                Ruby development
+              done?
+            %p.pull-right
+              Made with 
+              %span{class: :heart}
+                ♥
+              by 
+              %a{href: "http://swanson.github.com"}
+                Matt Swanson

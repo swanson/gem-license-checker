@@ -1,3 +1,5 @@
-require "ostruct"
-
-class Result < Struct.new(:name, :version, :license); end
+class Result < ActiveRecord::Base
+  def gem_list
+    gems.split("|")
+  end
+end

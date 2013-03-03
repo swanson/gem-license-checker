@@ -1,6 +1,11 @@
 require_relative "../models/project_gem"
 
 class GemRepository
+  def self.exists?(gem_name)
+    g = ProjectGem.where(name: gem_name).first
+    !g.nil?
+  end
+
   def self.get_license_by_name(gem_name)
     g = ProjectGem.where(name: gem_name).first
 
