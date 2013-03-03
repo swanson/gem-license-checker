@@ -1,3 +1,5 @@
+#Gem License Checker
+
 Given a Gemfile, the app checks for License-like files and uses fuzzy
 string matching to infer each gem's license.
 
