@@ -3,8 +3,8 @@ string matching to infer each gem's license.
 
 Built with Sinatra, ActiveRecord, DelayedJob, Bootstrap, fuzzy_match, and Gemnasium's Gemfile parser for [SEP][www.sep.com/labs] Startup Weekend - Spring 2013 edition.
 
-![Home page][http://i.imgur.com/HOWKoPH.png]
-![Results][http://i.imgur.com/EqHftgT.png]
+![Home page](http://i.imgur.com/HOWKoPH.png)
+![Results](http://i.imgur.com/EqHftgT.png)
 
 ## License
 MIT
