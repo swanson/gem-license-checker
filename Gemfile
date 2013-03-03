@@ -19,11 +19,14 @@ group :production do
   gem "pg"
 end
 
+group :development do
+  gem "sqlite3"
+end
+
 group(:development, :testing) do
   gem "pry"
   gem "rspec"
   gem "rack-test"
-  gem "sqlite3"
   gem "shotgun"
   gem "racksh"
 end
