@@ -3,7 +3,7 @@
 Given a Gemfile, the app checks for License-like files and uses fuzzy
 string matching to infer each gem's license.
 
-Built with Sinatra, ActiveRecord, DelayedJob, Bootstrap, fuzzy_match, and Gemnasium's Gemfile parser for [SEP Startup Weekend - Spring 2013](www.sep.com/labs).
+Built with Sinatra, ActiveRecord, DelayedJob, Bootstrap, fuzzy_match, and Gemnasium's Gemfile parser for [SEP Startup Weekend - Spring 2013](http://www.sep.com/labs).
 
 ![Home page](http://i.imgur.com/HOWKoPH.png)
 ![Results](http://i.imgur.com/EqHftgT.png)
